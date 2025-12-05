@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Itinerario Cumpleaños – Boyacá</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f5f7fb;
+      color: #222;
+    }
+    header {
+      background: #283593;
+      color: #fff;
+      padding: 1.5rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 1.8rem;
+    }
+    header p {
+      margin: 0.3rem 0 0;
+      font-size: 0.95rem;
+      opacity: 0.9;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 1.5rem auto 3rem;
+      padding: 0 1rem;
+    }
+    .tabs {
+      display: flex;
+      gap: 0.5rem;
+      margin-bottom: 1.5rem;
+      flex-wrap: wrap;
+    }
+    .tab {
+      padding: 0.6rem 1rem;
+      border-radius: 999px;
+      border: 1px solid #ccc;
+      background: #fff;
+      cursor: pointer;
+      font-size: 0.9rem;
+    }
+    .tab.active {
+      background: #283593;
+      color: #fff;
+      border-color: #283593;
+    }
+    section.itinerary {
+      display: none;
+    }
+    section.itinerary.active {
+      display: block;
+    }
+    h2 {
+      margin-top: 0;
+      color: #283593;
+    }
+    h3 {
+      margin-top: 1.5rem;
+      margin-bottom: 0.5rem;
+      color: #3949ab;
+    }
+    .day-card {
+      background: #fff;
+      border-radius: 0.75rem;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04);
+      padding: 1rem;
+      margin-bottom: 1.5rem;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.9rem;
+    }
+    th, td {
+      padding: 0.5rem 0.6rem;
+      vertical-align: top;
+      border-bottom: 1px solid #eee;
+    }
+    th {
+      background: #e8eaf6;
+      font-weight: 600;
+      text-align: left;
+    }
+    tr:last-child td {
+      border-bottom: none;
+    }
+    .note {
+      font-size: 0.8rem;
+      color: #555;
+      margin-top: 0.3rem;
+    }
+    @media (max-width: 700px) {
+      th, td {
+        font-size: 0.8rem;
+        padding: 0.4rem;
+      }
+      header h1 {
+        font-size: 1.4rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Itinerario Cumpleaños – Viaje a Boyacá</h1>
+    <p>Pedro, tu esposa, 3 amigos – 12 al 14 de diciembre · Cajicá · Paipa · Monguí · Tibasosa · Ráquira · Villa de Leyva</p>
+  </header>
+
+  <div class="container">
+    <div class="tabs">
+      <button class="tab active" data-target="relajado">Itinerario relajado</button>
+      <button class="tab" data-target="ambicioso">Itinerario ambicioso</button>
+    </div>
+
+    <!-- ITINERARIO RELAJADO -->
+    <section id="relajado" class="itinerary active">
+      <h2>Itinerario relajado</h2>
+      <p class="note">
+        Versión con tiempos más tranquilos, menos carretera en la noche y buen espacio para disfrutar el hotel y los pueblos.
+      </p>
+
+      <!-- Viernes relajado -->
+      <div class="day-card">
+        <h3>Viernes 12 de diciembre – Noche en Cajicá</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Hora</th>
+              <th>Actividad</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>5:30 pm</td>
+              <td>Salida desde Cajicá hacia Bogotá para recoger a los amigos.</td>
+            </tr>
+            <tr>
+              <td>6:00 pm</td>
+              <td>Recoger a los amigos en Bogotá.</td>
+            </tr>
+            <tr>
+              <td>7:00 pm</td>
+              <td>Llegada a Cajicá, acomodarse, dejar maletas y descansar un momento.</td>
+            </tr>
+            <tr>
+              <td>7:30 pm</td>
+              <td>Cena ligera en Cajicá (conocemos pizzeria chevere bbb)</td>
+            </tr>
+            <tr>
+              <td>8:30 pm</td>
+              <td>Salida hacia Zipaquirá para ver el alumbrado navideño en el parque principal.</td>
+            </tr>
+            <tr>
+              <td>9:00 pm</td>
+              <td>Regreso a Cajicá y descanso para el viaje del sábado.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Sábado relajado -->
+      <div class="day-card">
+        <h3>Sábado 13 de diciembre – Cajicá → Paipa + Tibasosa noche</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Hora</th>
+              <th>Actividad</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>6:30 am</td>
+              <td>Despertar en Cajicá, ducharse y alistarse para el viaje.</td>
+            </tr>
+            <tr>
+              <td>7:00 am</td>
+              <td>Salida de Cajicá rumbo a Paipa por la vía Briceño–Tunja.</td>
+            </tr>
+            <tr>
+              <td>8:00 am</td>
+              <td>Desayuno en carretera por el sector del Sisga (ej. La Cabaña, Parador Roa).</td>
+            </tr>
+            <tr>
+              <td>9:00 am</td>
+              <td>Continuación del viaje hacia Boyacá.</td>
+            </tr>
+            <tr>
+              <td>10:00 am</td>
+              <td>Parada en el Puente de Boyacá: fotos, breve recorrido histórico.</td>
+            </tr>
+            <tr>
+              <td>11:30 am</td>
+              <td>Llegada a Paipa.</td>
+            </tr>
+            <tr>
+              <td>12:00 pm</td>
+              <td>Check-in en el Hotel Panorama (o dejar maletas si la habitación no está lista).</td>
+            </tr>
+            <tr>
+              <td>12:30 pm</td>
+              <td>Almuerzo en Paipa.</td>
+            </tr>
+            <tr>
+              <td>2:00 pm</td>
+              <td>
+                Tarde en Paipa:<br />
+                • Recorrido por el Lago Sochagota.<br />
+              </td>
+            </tr>
+            <tr>
+              <td>4:00 pm</td>
+              <td>Piscina.</td>
+            </tr>
+            <tr>
+              <td>6:00 pm</td>
+              <td>Salida hacia Tibasosa para ver alumbrado navideño.<br />
+                  - Podriamos comer acá.<br />
+              </td>
+            </tr>
+            <tr>
+              <td>8:00 pm</td>
+              <td>Salida hacia pueblito boyacense para ver alumbrado<br />
+                  - Actualizar la foto de Checho.<br />
+              </td>
+            </tr>
+            <tr>
+              <td>9:00 pm</td>
+              <td>Regreso a Paipa, descanso.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Domingo relajado -->
+      <div class="day-card">
+        <h3>Domingo 14 de diciembre – Paipa → Monguí → Ráquira → Villa de Leyva → Bogotá</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Hora</th>
+              <th>Actividad</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>7:00 am</td>
+              <td>Despertar en Paipa y alistarse.</td>
+            </tr>
+            <tr>
+              <td>8:00 am – 9:00 am</td>
+              <td>Desayuno en el hotel, fotos en las instalaciones.</td>
+            </tr>
+            <tr>
+              <td>10:00 am</td>
+              <td>Check-out del hotel.</td>
+            </tr>
+            <tr>
+              <td>10:00 am – 11:00 am</td>
+              <td>Traslado en carro desde Paipa hasta Monguí.</td>
+            </tr>
+            <tr>
+              <td>11:00 am – 12:30 pm</td>
+              <td>
+                Visita a Monguí:<br />
+                • Recorrer el Puente Real de Calicanto.<br />
+                • Plaza principal, iglesia, calles empedradas.<br />
+                • Compras de artesanías y balones (típicos del pueblo).
+              </td>
+            </tr>
+            <tr>
+              <td>12:30 pm</td>
+              <td>Salida de Monguí rumbo a Ráquira.</td>
+            </tr>
+            <tr>
+              <td>2:00 pm</td>
+              <td>Almuerzo en Ráquira (restaurantes típicos boyacenses).</td>
+            </tr>
+            <tr>
+              <td>3:00 pm – 4:00 pm</td>
+              <td>Recorrido por Ráquira: artesanías, tiendas de barro y calles coloridas.</td>
+            </tr>
+            <tr>
+              <td>4:00 pm</td>
+              <td>Salida hacia Villa de Leyva.</td>
+            </tr>
+            <tr>
+              <td>4:40 pm – 5:30 pm</td>
+              <td>
+                Paseo corto por Villa de Leyva:<br />
+                • Plaza principal.<br />
+                • Museo del chocolate o café en alguna terraza.<br />
+                • Fotos en las calles coloniales.
+              </td>
+            </tr>
+            <tr>
+              <td>5:30 pm</td>
+              <td>Salida de Villa de Leyva rumbo a Bogotá.</td>
+            </tr>
+            <tr>
+              <td>8:30 pm</td>
+              <td>Llegada aproximada a Bogotá, dejar a los amigos.</td>
+            </tr>
+            <tr>
+              <td>9:00 pm</td>
+              <td>Regreso a Cajicá.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ITINERARIO AMBICIOSO -->
+    <section id="ambicioso" class="itinerary">
+      <h2>Itinerario ambicioso</h2>
+      <p class="note">
+        Versión para exprimir más el viaje: más pueblos en un mismo día y más movimiento en carretera, ideal si todos disfrutan manejar y conocer muchos lugares.
+      </p>
+
+      <!-- Jueves ambicioso -->
+      <div class="day-card">
+        <h3>Jueves 12 de diciembre – Noche en Cajicá</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Hora</th>
+              <th>Actividad</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>5:30 pm</td>
+              <td>Salida desde Cajicá hacia Bogotá para recoger a los amigos.</td>
+            </tr>
+            <tr>
+              <td>6:00 pm</td>
+              <td>Recoger a los amigos en Bogotá.</td>
+            </tr>
+            <tr>
+              <td>7:00 pm</td>
+              <td>Llegada a Cajicá, dejar maletas y arreglarse.</td>
+            </tr>
+            <tr>
+              <td>7:30 pm</td>
+              <td>Cena ligera en Cajicá.</td>
+            </tr>
+            <tr>
+              <td>8:30 pm</td>
+              <td>Salida hacia Zipaquirá para ver el alumbrado navideño.</td>
+            </tr>
+            <tr>
+              <td>9:00 pm – 10:00 pm</td>
+              <td>Recorrido por el centro y parque principal iluminado.</td>
+            </tr>
+            <tr>
+              <td>10:00 pm</td>
+              <td>Regreso a Cajicá y descanso.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Sábado ambicioso -->
+      <div class="day-card">
+        <h3>Sábado 13 de diciembre – Cajicá → Paipa + Tibasosa + Monguí</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Hora</th>
+              <th>Actividad</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>6:30 am</td>
+              <td>Despertar en Cajicá y alistarse.</td>
+            </tr>
+            <tr>
+              <td>7:00 am</td>
+              <td>Salida de Cajicá rumbo a Boyacá.</td>
+            </tr>
+            <tr>
+              <td>8:00 am</td>
+              <td>Desayuno en el sector del Sisga (parador típico).</td>
+            </tr>
+            <tr>
+              <td>10:00 am</td>
+              <td>Parada en el Puente de Boyacá para fotos y recorrido corto.</td>
+            </tr>
+            <tr>
+              <td>11:30 am</td>
+              <td>Llegada a Paipa y check-in en el Hotel Panorama.</td>
+            </tr>
+            <tr>
+              <td>12:30 pm</td>
+              <td>Almuerzo en Paipa.</td>
+            </tr>
+            <tr>
+              <td>2:00 pm</td>
+              <td>Recorrido rápido por el Lago Sochagota y alrededores.</td>
+            </tr>
+            <tr>
+              <td>3:00 pm</td>
+              <td>Salida hacia Tibasosa.</td>
+            </tr>
+            <tr>
+              <td>3:30 pm – 5:00 pm</td>
+              <td>
+                Visita a Tibasosa:<br />
+                • Plaza principal y calles coloniales.<br />
+                • Cafés, postres, fotos del pueblo.
+              </td>
+            </tr>
+            <tr>
+              <td>5:00 pm</td>
+              <td>Salida de Tibasosa rumbo a Monguí.</td>
+            </tr>
+            <tr>
+              <td>6:00 pm – 8:30 pm</td>
+              <td>
+                Noche en Monguí:<br />
+                • Recorrido por el Puente Real de Calicanto.<br />
+                • Calles empedradas, plaza e iglesia iluminadas.<br />
+                • Ambiente navideño, fotos nocturnas.
+              </td>
+            </tr>
+            <tr>
+              <td>8:30 pm</td>
+              <td>Cena ligera en Monguí (restaurante típico del pueblo).</td>
+            </tr>
+            <tr>
+              <td>10:00 pm</td>
+              <td>Regreso a Paipa y descanso.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Domingo ambicioso -->
+      <div class="day-card">
+        <h3>Domingo 14 de diciembre – Paipa → Ráquira → Villa de Leyva → Bogotá</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Hora</th>
+              <th>Actividad</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>7:00 am</td>
+              <td>Despertar en Paipa.</td>
+            </tr>
+            <tr>
+              <td>8:00 am</td>
+              <td>Desayuno en el hotel, últimas fotos.</td>
+            </tr>
+            <tr>
+              <td>10:00 am</td>
+              <td>Check-out del hotel.</td>
+            </tr>
+            <tr>
+              <td>11:30 am – 1:00 pm</td>
+              <td>Visita a Ráquira: compras de artesanías, fotos en las calles y fachadas coloridas.</td>
+            </tr>
+            <tr>
+              <td>1:00 pm – 2:00 pm</td>
+              <td>Almuerzo en Ráquira o en carretera camino a Villa de Leyva.</td>
+            </tr>
+            <tr>
+              <td>2:00 pm – 4:00 pm</td>
+              <td>
+                Villa de Leyva:<br />
+                • Plaza principal.<br />
+                • Visita al museo del chocolate o helado en la plaza.<br />
+                • Paseo por calles empedradas y fotos.
+              </td>
+            </tr>
+            <tr>
+              <td>4:00 pm</td>
+              <td>Salida de Villa de Leyva rumbo a Bogotá.</td>
+            </tr>
+            <tr>
+              <td>7:30 pm – 8:00 pm</td>
+              <td>Llegada aproximada a Bogotá, dejar a los amigos.</td>
+            </tr>
+            <tr>
+              <td>8:30 pm – 9:00 pm</td>
+              <td>Regreso a Cajicá.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </div>
+
+  <script>
+    const tabs = document.querySelectorAll('.tab');
+    const itineraries = document.querySelectorAll('.itinerary');
+
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        const targetId = tab.getAttribute('data-target');
+
+        tabs.forEach(t => t.classList.remove('active'));
+        itineraries.forEach(sec => sec.classList.remove('active'));
+
+        tab.classList.add('active');
+        document.getElementById(targetId).classList.add('active');
+      });
+    });
+  </script>
+</body>
+</html>
